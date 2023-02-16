@@ -1,0 +1,83 @@
+body {
+    background-color: lightseagreen;
+}
+
+nav {
+   text-align: center;
+   word-spacing: 20;
+   background-color: lightseagreen;
+   color: purple;
+   border-radius: 40px;
+}
+
+.titleText {
+    text-align: center;
+    color: purple;
+}
+
+.info {
+text-align: center;
+justify-content: center;    
+color: purple;
+font-size: larger;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.promiseList {
+    font-weight: bold;
+    color: darkgreen;
+    text-align: center;
+}
+
+h3 {
+    color: darkgreen;
+    text-align: center;
+}
+
+#sandwichUpdate {
+    text-align: center;
+}
+
+#ingredient {
+    font-weight: bold;
+}
+
+#address {
+    font-weight: bold;
+}
+
+#filling {
+    font-weight: bold;
+}
+
+.contactForm {
+    text-align: center;
+}
+
+img {
+    border-radius: 30%;
+    border-color: blue;
+    border-style: dashed;
+    justify-content: center;
+}
+
+.timeCheck {
+    text-align: center;
+}
+
+button {
+    color: rgba(255, 0, 255, 0.881);
+    background-color: rgb(80, 37, 120);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+}
+#alert {
+    font-size: larger;
+    text-align: center;
+}
+
+#currentFillings {
+    text-align: center;
+}

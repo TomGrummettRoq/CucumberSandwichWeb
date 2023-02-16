@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    
+<header>
+    <nav> 
+    <b>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Get Involved</a>
+    </b>
+    </nav>
+</header>
+
+<body>
+
+    <div class="titleText">
+        <h1 id="headingOne">
+            Cucumber Sandwiches
+        </h1>
+    <h4 id="subHeading" onclick="getElementById('subHeading').style.color = 'green'"> The worst kind of sandwich </h4>
+    
+    
+</div>
+
+<p>
+    <div class="info">
+        
+        There are many reasons why I dislike Cucumber Sandwiches. Here's my top 4 reasons you should avoid them at all costs. 
+        
+    </div>
+</p>
+<h3 id="reason"> Click on each reason to find out why </h3>
+<div>
+    
+    <ol class="promiseList">
+        <ul id="firstItem" onclick="getElementById('firstItem').innerHTML = window.alert('If you don\'t eat them immediately you\'re left with a soggy mess')">  Soggy Mess  </ul>
+        <ul id="secondItem" onclick="getElementById('secondItem').innerHTML = window.alert('Who honestly enjoys eating cucumber?!')">  One Dimensional  </ul>
+        <ul id="thirdItem" onclick="getElementById('thirdItem').innerHTML = window.alert('Not even the thinnest slice of ham to be found...')">  All Vegetable  </ul>
+        <ul id="fourthItem" onclick="getElementById('fourthItem').innerHTML = window.alert('Every sandwich can be improved by grilling... but imagine a warm cucumber butty?!')"> Can't be Toasted </ul>
+    </ol>
+    
+</div>
+
+
+
+<div>
+    <h3>
+       Make your own sandwich!
+    </h3>
+            <form action=" "class="contactForm">
+                <label id="ingredientList"><b>Ingredient</b></label><br>
+                <br>
+                <input id="ingredient"  type="text" value=""> 
+                
+            </form>
+            <br>
+
+        <div id="sandwichUpdate">
+
+            <button id="sandwichButton" onclick="sandwichArtist()"> Add to your Butty </button>
+            
+            <ol> <h3>Current Fillings</h3>
+                <ul id="currentFillings"> </ul>
+                <ul></ul>
+            </ol>
+            
+            <script>
+                
+            let sandwich = ['bread', 'butter'];
+            
+                function sandwichArtist() {
+                    let newSandwich = document.getElementById("ingredient").value;
+                    sandwich.push(newSandwich);
+                    document.getElementById("currentFillings").innerHTML = sandwich;
+                };
+        
+            </script>
+        </div>
+            
+</div>
+        
+        <div class="timeCheck">
+            
+            <br>
+            <p> Not a fan of the Cucumber sandwiches? </p>
+            <button id="alert" onclick="getElementById('alert').innerHTML = window.alert('You\'ve signed up to our newsletter')">JOIN THE MOVEMENT</button>
+            
+            <br>
+        </div>
+        
+        <br>
+    </body>
+        
+        <footer>
+            
+            <nav> 
+                <b>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Get Involved</a>
+                </b>
+            </nav>
+            
+        </footer>
+        
+    </body>
+    </html>
+    
