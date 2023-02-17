@@ -37,7 +37,6 @@
         <script>
             function changeColour() {
                 document.getElementById("headingOne").style.color = "greenyellow";
-                document.getElementById("subHeading").style.color = "greenyellow";
             }
          </script>
     
@@ -62,17 +61,15 @@
     
 </div>
 
-
-
 <div>
     <h3>
        Make your own sandwich!
     </h3>
             <form action=" "class="contactForm">
                 <label id="ingredientList"><b>Ingredient</b></label><br>
+                <label>Bread & Butter is already taken care of</label>
                 <br>
-                <input id="ingredient"  type="text" value=""> 
-                
+                <input id="ingredient"  type="text" value="">                 
             </form>
             <br>
 
@@ -80,7 +77,7 @@
 
             <button id="sandwichButton" onclick="sandwichArtist()"> Add to your Butty </button>
             
-            <ol> <h4 id="sandwichFillings">Current Fillings</h4>
+            <ol> <h4 id="sandwichFillings">Current Fillings:</h4>
                 <ul id="currentFillings"> </ul>
             </ol>
             
@@ -95,6 +92,7 @@
                 };
         
             </script>
+        
         </div>
             
 </div>
