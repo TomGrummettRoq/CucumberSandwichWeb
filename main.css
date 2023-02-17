@@ -28,6 +28,7 @@ padding-right: 50px;
     font-weight: bold;
     color: darkgreen;
     text-align: center;
+    padding-right: 80px;
 }
 
 h3 {
@@ -55,13 +56,6 @@ h3 {
     text-align: center;
 }
 
-img {
-    border-radius: 30%;
-    border-color: blue;
-    border-style: dashed;
-    justify-content: center;
-}
-
 .timeCheck {
     text-align: center;
 }
@@ -80,4 +74,11 @@ button {
 
 #currentFillings {
     text-align: center;
+    font-weight: bold;
 }
+h4 {
+    color: darkgreen;
+    text-align: center;
+    padding-right: 40px;
+}
+

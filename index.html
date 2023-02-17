@@ -13,6 +13,7 @@
 <body>
     
 <header>
+    <title>Cucumber Sandwich</title>
     <nav> 
     <b>
         <a href="#">Home</a>
@@ -22,14 +23,23 @@
     </nav>
 </header>
 
+
 <body>
 
     <div class="titleText">
-        <h1 id="headingOne">
+        <h1 id="headingOne" onclick="changeColour()">
             Cucumber Sandwiches
         </h1>
-    <h4 id="subHeading" onclick="getElementById('subHeading').style.color = 'green'"> The worst kind of sandwich </h4>
+
+
+<h4 id="subHeading" onclick="getElementById('subHeading').style.color = 'greenyellow'"> The worst kind of sandwich </h4>
     
+        <script>
+            function changeColour() {
+                document.getElementById("headingOne").style.color = "greenyellow";
+                document.getElementById("subHeading").style.color = "greenyellow";
+            }
+         </script>
     
 </div>
 
@@ -41,9 +51,9 @@
     </div>
 </p>
 <h3 id="reason"> Click on each reason to find out why </h3>
-<div>
+<div class="promiseList">
     
-    <ol class="promiseList">
+    <ol>
         <ul id="firstItem" onclick="getElementById('firstItem').innerHTML = window.alert('If you don\'t eat them immediately you\'re left with a soggy mess')">  Soggy Mess  </ul>
         <ul id="secondItem" onclick="getElementById('secondItem').innerHTML = window.alert('Who honestly enjoys eating cucumber?!')">  One Dimensional  </ul>
         <ul id="thirdItem" onclick="getElementById('thirdItem').innerHTML = window.alert('Not even the thinnest slice of ham to be found...')">  All Vegetable  </ul>
@@ -70,9 +80,8 @@
 
             <button id="sandwichButton" onclick="sandwichArtist()"> Add to your Butty </button>
             
-            <ol> <h3>Current Fillings</h3>
+            <ol> <h4 id="sandwichFillings">Current Fillings</h4>
                 <ul id="currentFillings"> </ul>
-                <ul></ul>
             </ol>
             
             <script>
@@ -99,6 +108,8 @@
             <br>
         </div>
         
+
+
         <br>
     </body>
         
