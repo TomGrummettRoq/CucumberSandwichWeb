@@ -1,38 +1,33 @@
-const assert = require('assert');
-const {Given, When, Then} = require('@cucumber/cucumber');
+Browser = require("../../browser");
+const browser = new Browser();
 
-Given('the page loads correctly', function() {
-    
+const assert = require('assert');
+const {Given, When, Then, Before, After} = require('@cucumber/cucumber');
+
+
+Before(async function() {
+    browser.browserBuild();
+    await browser.browserNavigate('http://127.0.0.1:5500/index.html');
 });
 
-Given('the text input is {string}', async function() {
+After(async function() {
+    await browser.browserExit();
+});
+
+Given('the page loads correctly', function() {
+    // Nothing to do as page already loaded
 });
 
 When('the title is clicked', function() {
-    const element = this.getElement('headingOne');
-        element.elementClick();
-});
-
-When('the \'sign up\' button is clicked', function(elementClick) {
-     const button = this.getElement('alert');
-        button.elementClick();
-    }
-);
-
-Then('the page title should be present', function() {
 
 });
 
 Then('the title should change colour', function() {
-    const title = this.getElement(id);
-        return title.getCssValue('color');
-});
-
-Then('the screen should push a window alert', function() {
 
 });
 
-Then('the screen logs the input', function() {
-
+Then('the title should be {string}', async function(title) {
+    const actual = await browser.headless.getTitle();
+    
+    assert(actual == title);
 });
-

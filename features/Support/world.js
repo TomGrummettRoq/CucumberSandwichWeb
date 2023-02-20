@@ -2,11 +2,10 @@ const cucumber = require("@cucumber/cucumber");
 
 class CustomWorld {
     constructor() {
-        this.headless = null;    
+        
     }
 }
 
 
-
-
+// Creates the Cucumber Test Environment
 cucumber.setWorldConstructor(CustomWorld);
