@@ -19,15 +19,12 @@ Given('the page loads correctly', function() {
     // Nothing to do as page already loaded
 });
 
-// **************************************************//
-//Current Test Work in Progress
-Given('the text input is {word}', async function() {
+When('the text input is {word}', async function(word) {
     const text = 'ham';
     const textField = await browser.getElement('ingredient');
     
     await textField.sendKeys(text);
 });
-// **************************************************//
 
 When('the button is clicked', async function() {
     await browser.elementClick('sandwichButton');
@@ -39,7 +36,8 @@ When('the heading is clicked', async function() {
 
 Then('the screen logs the input', async function() {
     const text = await browser.getElement('currentFillings');
-    assert(text == 'bread,butter,ham');
+    const fillings = await text.getText();
+    assert(fillings == 'bread,butter,ham');
 });
 
 Then('the heading should change colour', async function() {

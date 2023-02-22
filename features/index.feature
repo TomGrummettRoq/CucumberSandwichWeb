@@ -11,8 +11,8 @@ Feature: Website Functionality
 
     Scenario: Using the 'add ingredient' form correctly logs input
         Given the page loads correctly
-        And the text input is "ham"
-        When the button is clicked
+        When the text input is "ham"
+        And the button is clicked
         Then the screen logs the input
 
     # Scenario: Clicking the 'Join the Movement' button pops up an alert
